@@ -1,0 +1,27 @@
+{
+  "name": "newsletterastro",
+  "version": "1.0.0",
+  "description": "![Design preview for the Newsletter sign-up form with success message coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/public/css/input.css -o ./src/public/css/output.css --watch",
+    "ser": "ts-node-dev ./src/server/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.6",
+    "zod": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}

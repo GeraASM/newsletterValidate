@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/png">
+    <link href="/css/output.css" rel="stylesheet">
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body class="h-screen bg-blue-700 font-roboto md:place-content-center">
+    <main>
+        <section class="stay lg:max-w-[904px] lg:flex-row-reverse lg:flex lg:gap-[64px] lg:p-[32px] bg-white max-w-[375px] mx-auto md:max-w-[608px] md:p-[40px] md:rounded-[36px]">
+            <figure class="stay__figure">
+              <img id="picture" src="./assets/images/illustration-sign-up-mobile.svg" alt="Sign Up" class="stay__img lg:h-full">
+            </figure>
+            <section class="stay__content py-500 px-300 md:px-0 text-blue-800">
+              <h1 class="stay__title md:text-[56px] text-[40px] font-bold">Stay update!</h1>
+              <p class="my-6">Join 60,000+ product managers receiving monthly updates on:</p>
+              <ul class="grid gap-2">
+                <li class="stay__information"><img src="./assets/images/icon-success.svg" alt="Succes">Product discovery and building what matters</li>
+                <li class="stay__information"><img src="./assets/images/icon-success.svg" alt="Succes">Measuring to ensure updates are a success</li>
+                <li class="stay__information"><img src="./assets/images/icon-success.svg" alt="Succes">And much more!</li>
+              </ul>
+              <form class="mt-10 md:mt-[24px]" id="form" method="post" action="/" novalidate>
+                <div>
+                  <div class="flex justify-between text-[12px] leading-[1.5] text-blue-800 font-bold mb-2">
+                    <label for="email" class="">Email address</label>
+                    <small id="error" class="text-red hidden">Valid email required</small>
+                  </div>
+                  <input id="input" class="font-roboto text-blue-800 outline-1  focus:outline-blue-800 border-transparent  outline-grey py-4 px-6 placeholder:text-grey border-[1px] rounded-[8px] block w-full" type="email" name="email" id="email" placeholder="email@company.com">
+                </div>
+                <button type="submit" class="cursor-pointer hover:bg-linear-to-r from-gradient-start to-gradient-end mt-3 lg:mt-6 block bg-blue-800 rounded-[8px] w-full text-center py-[16px] font-bold text-white">Subscribe to monthly newsletter</button>
+              </form>
+            </section>
+        </section>
+        /
+    </main>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

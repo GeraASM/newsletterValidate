@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme{
+    --color-grey: #949494;
+    --color-blue-800: #242742;
+    --color-blue-700: #36384D;
+    --color-red: #FF6155;
+    --color-gradient-start: #FF6A3A;
+    --color-gradient-end: #FF527B;
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+    --spacing-600: 48px;
+    --spacing-800: 64px;
+    --spacing-900: 72px;
+    --spacing-1300: 104px;
+
+    --font-roboto: "Roboto", sans-serif;
+}
+
+@layer components {  
+    .stay__information {
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 16px;
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        color: inherit;
+    }
+
+    .stay__information > img {
+        width: 21px; height: 21px;
+        object-fit: contain;
+    }
+
+  
+    .stay__input--error {
+        font-family: inherit;
+        background-color: #f8d4d1;
+        color: var(--color-red) !important;
+        outline-color: var(--color-red) !important;
+    }
+}   
